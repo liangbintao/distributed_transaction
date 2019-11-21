@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    # 网厨数据库
+    db1:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+      jdbc-url: jdbc:mysql://localhost:3307/db_01?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&useLegacyDatetimeCode=false&allowMultiQueries=true
+      username: root
+      password: 123456
+
+    # 厨币商城数据库
+    db2:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+      jdbc-url: jdbc:mysql://localhost:3307/db_02?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&useLegacyDatetimeCode=false&allowMultiQueries=true
+      username: root
+      password: 123456
+
+  # 分布式锁
+  jta:
+    # log-dir: classpath*:tx-logs
+    transaction-manager-id: txManager

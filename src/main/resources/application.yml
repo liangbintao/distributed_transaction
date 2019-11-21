@@ -1,0 +1,14 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: ecook_coin_mall
+  jackson:
+    time-zone: Asia/Shanghai
+
+  profiles:
+    active: test
+
+#logging:
+#  level.com.coin.mapper: debug
